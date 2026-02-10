@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowstate UK — Rap & Music News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark">
+    <div class="app">
+      <header class="site-header">
+        <div class="logo-block">
+          <span class="logo">Flowstate UK</span>
+          <span class="tagline">Rap, drops & culture — live</span>
+        </div>
+        <nav class="main-nav">
+          <a href="#featured">Featured</a>
+          <a href="#trending">Trending</a>
+          <a href="#latest">Latest</a>
+          <a href="#opinion">Opinion</a>
+          <a href="#admin">Admin</a>
+        </nav>
+        <div class="header-actions">
+          <button class="btn ghost" id="login-button">Sign in with Google</button>
+          <button class="btn" id="create-profile-button">Create @username</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">UK RAP FRONTLINE</p>
+            <h1 class="hero-title">Bold headlines. Real-time drops. No noise.</h1>
+            <p class="hero-subtitle">
+              Flowstate UK is the home of modern rap journalism — a dark-mode, community-driven
+              newsroom powered by Google sign-in and Firebase.
+            </p>
+            <div class="hero-actions">
+              <button class="btn">Browse featured</button>
+              <button class="btn ghost">Join the community</button>
+            </div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <h3>126k</h3>
+              <p>Weekly readers</p>
+            </div>
+            <div class="metric-card">
+              <h3>2.3k</h3>
+              <p>Verified artists</p>
+            </div>
+            <div class="metric-card">
+              <h3>98%</h3>
+              <p>Engagement live</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="featured" class="section featured">
+          <div class="section-heading">
+            <h2>Featured</h2>
+            <div class="filters">
+              <button class="filter active">All</button>
+              <button class="filter">Music</button>
+              <button class="filter">Drops</button>
+              <button class="filter">News</button>
+              <button class="filter">Opinion</button>
+            </div>
+          </div>
+          <div class="featured-grid">
+            <article class="feature-card large">
+              <div class="card-image"></div>
+              <div class="card-content">
+                <span class="tag">MUSIC</span>
+                <h3>Stormzy returns with a midnight drop that shuts London down</h3>
+                <p>
+                  Inside the midnight video premiere, exclusive notes from the camp, and why this
+                  release resets the UK roadmap.
+                </p>
+                <div class="meta">
+                  <span>By Mica Reid</span>
+                  <span>•</span>
+                  <span>12 May 2024</span>
+                </div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div class="card-image"></div>
+              <div class="card-content">
+                <span class="tag">DROPS</span>
+                <h3>Central Cee previews the next tape in a South London pop-up</h3>
+                <div class="meta">
+                  <span>By Esme Kay</span>
+                  <span>•</span>
+                  <span>11 May 2024</span>
+                </div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div class="card-image"></div>
+              <div class="card-content">
+                <span class="tag">NEWS</span>
+                <h3>Wireless announces a grime-forward stage takeover</h3>
+                <div class="meta">
+                  <span>By Jordan Vale</span>
+                  <span>•</span>
+                  <span>10 May 2024</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="trending" class="section trending">
+          <div class="section-heading">
+            <h2>Trending right now</h2>
+            <p>Calculated live from likes, comments, and votes in Firebase.</p>
+          </div>
+          <div class="trending-grid">
+            <div class="trend-card">
+              <span class="rank">01</span>
+              <div>
+                <h4>Unknown T links with Skepta on a steel-tight collab</h4>
+                <p>Upvotes 3.2k • Comments 684 • Poll votes 1.1k</p>
+              </div>
+            </div>
+            <div class="trend-card">
+              <span class="rank">02</span>
+              <div>
+                <h4>Headie One’s tour diaries: the raw voice notes</h4>
+                <p>Upvotes 2.8k • Comments 522 • Poll votes 920</p>
+              </div>
+            </div>
+            <div class="trend-card">
+              <span class="rank">03</span>
+              <div>
+                <h4>Why the UK’s underground sound is back on top</h4>
+                <p>Upvotes 2.5k • Comments 489 • Poll votes 810</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="latest" class="section latest">
+          <div class="section-heading">
+            <h2>Latest</h2>
+            <div class="search-bar">
+              <input type="search" placeholder="Search articles" />
+              <button class="btn">Search</button>
+            </div>
+          </div>
+          <div class="latest-grid">
+            <article class="latest-card">
+              <h3>AJ Tracey’s pop up at Tottenham is all day energy</h3>
+              <p>
+                Follower counts and response charts show why this scene-driven release is moving
+                so fast.
+              </p>
+              <div class="stats">Likes 1.4k • Comments 221 • Votes 392</div>
+            </article>
+            <article class="latest-card">
+              <h3>Dave’s producer circle on how they built the new sound</h3>
+              <p>
+                A behind-the-scenes drop with audio embeds, studio images, and full session data.
+              </p>
+              <div class="stats">Likes 1.1k • Comments 154 • Votes 210</div>
+            </article>
+            <article class="latest-card">
+              <h3>Festival watch: Bristol’s set lists are shifting</h3>
+              <p>
+                The analytics dashboard shows where the energy is pointing before the crowd even
+                arrives.
+              </p>
+              <div class="stats">Likes 860 • Comments 97 • Votes 120</div>
+            </article>
+          </div>
+        </section>
+
+        <section id="opinion" class="section opinion">
+          <div class="section-heading">
+            <h2>Opinion spotlight</h2>
+            <p>Polls appear only for OPINION-tagged articles and update live.</p>
+          </div>
+          <div class="opinion-layout">
+            <article class="opinion-article">
+              <div class="card-image tall"></div>
+              <div class="card-content">
+                <span class="tag">OPINION</span>
+                <h3>Is drill finally the UK’s defining export sound?</h3>
+                <div class="meta">
+                  <span>By Priya Shah</span>
+                  <span>•</span>
+                  <span>9 May 2024</span>
+                </div>
+                <p>
+                  A full-screen article layout with image blocks, audio drops, and a live poll
+                  embedded within the story.
+                </p>
+              </div>
+            </article>
+            <aside class="poll-card">
+              <h4>Reader poll</h4>
+              <p>Polls can be locked and can expire. Admins can add up to 5 options.</p>
+              <div class="poll-option">
+                <span>Yes — it’s already here</span>
+                <span class="poll-bar" style="width: 62%"></span>
+                <strong>62%</strong>
+              </div>
+              <div class="poll-option">
+                <span>No — grime still leads</span>
+                <span class="poll-bar" style="width: 38%"></span>
+                <strong>38%</strong>
+              </div>
+              <button class="btn">Vote now</button>
+              <div class="poll-meta">2,182 votes • Locked after vote</div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section article-view">
+          <div class="article-hero">
+            <div class="article-image"></div>
+            <div class="article-header">
+              <span class="tag">NEWS</span>
+              <h2>Little Simz announces the most ambitious tour rollout yet</h2>
+              <div class="meta">
+                <span>By Dami Clarke</span>
+                <span>•</span>
+                <span>8 May 2024</span>
+                <span>•</span>
+                <span>Slug: /articles/little-simz-tour</span>
+              </div>
+              <div class="share-buttons">
+                <button class="btn ghost">Copy link</button>
+                <button class="btn ghost">Share</button>
+                <button class="btn ghost">Post</button>
+              </div>
+            </div>
+          </div>
+          <div class="article-body">
+            <p>
+              Image blocks, YouTube embeds, and audio players live directly inside articles. Content
+              is stored in Firestore with rich block layouts.
+            </p>
+            <div class="article-block image-block"></div>
+            <div class="article-block video-block">
+              <span>YouTube embed</span>
+            </div>
+            <div class="article-block audio-block">
+              <span>Audio embed</span>
+            </div>
+            <p>
+              The full-page article view spans the screen, with pinned comments, moderation tools,
+              and live engagement counters.
+            </p>
+          </div>
+          <div class="related">
+            <h3>Related articles</h3>
+            <div class="related-grid">
+              <article class="related-card">
+                <h4>Inside the camp building the next South London star</h4>
+              </article>
+              <article class="related-card">
+                <h4>Why this West Midlands collective is winning the summer</h4>
+              </article>
+              <article class="related-card">
+                <h4>The producers leading the club-ready revival</h4>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section community">
+          <div class="section-heading">
+            <h2>Community energy</h2>
+            <p>Comments, replies, likes, follows, and notifications are all live in Firebase.</p>
+          </div>
+          <div class="community-grid">
+            <div class="comment-card">
+              <div class="comment-header">
+                <span class="avatar"></span>
+                <div>
+                  <strong>@nightshift</strong>
+                  <span class="verified">✔</span>
+                </div>
+                <button class="pill">Pinned</button>
+              </div>
+              <p>That hook is cold. London is ready.</p>
+              <div class="comment-actions">
+                <span>Likes 128</span>
+                <span>Replies 14</span>
+                <button class="pill ghost">Report</button>
+              </div>
+            </div>
+            <div class="comment-card">
+              <div class="comment-header">
+                <span class="avatar"></span>
+                <div>
+                  <strong>@mellowtape</strong>
+                </div>
+              </div>
+              <p>Need the behind-the-scenes video next.</p>
+              <div class="comment-actions">
+                <span>Likes 76</span>
+                <span>Replies 9</span>
+                <button class="pill ghost">Report</button>
+              </div>
+            </div>
+            <div class="profile-card">
+              <div>
+                <h3>@j3turner</h3>
+                <p>Followers 24.8k • Verified</p>
+              </div>
+              <button class="btn">Follow</button>
+            </div>
+            <div class="profile-card">
+              <div>
+                <h3>@lndnr</h3>
+                <p>Followers 18.2k</p>
+              </div>
+              <button class="btn ghost">Follow</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="admin" class="section admin">
+          <div class="section-heading">
+            <h2>Admin dashboard</h2>
+            <p>Editorial control, verification, scheduling, and analytics — all in one panel.</p>
+          </div>
+          <div class="admin-grid">
+            <div class="admin-card">
+              <h3>Article controls</h3>
+              <ul>
+                <li>Create, edit, delete, and schedule posts.</li>
+                <li>Mark articles as featured and pin to top.</li>
+                <li>Upload hero images and gallery blocks.</li>
+                <li>Assign tags and add new tag types.</li>
+              </ul>
+              <button class="btn">Open editor</button>
+            </div>
+            <div class="admin-card">
+              <h3>Opinion poll builder</h3>
+              <ul>
+                <li>Enable/disable polls per OPINION article.</li>
+                <li>Add up to 5 answer options.</li>
+                <li>Set expiry date and lock-after-vote.</li>
+                <li>Live percentage updates in Firestore.</li>
+              </ul>
+              <button class="btn ghost">Configure polls</button>
+            </div>
+            <div class="admin-card">
+              <h3>User verification</h3>
+              <p>Type an email or @username to verify or promote.</p>
+              <div class="input-row">
+                <input type="text" placeholder="user@email.com or @username" />
+                <button class="btn">Verify</button>
+              </div>
+              <div class="input-row">
+                <input type="text" placeholder="Promote to admin" />
+                <button class="btn ghost">Promote</button>
+              </div>
+              <p class="meta">Admin email: prod.ceanre@gmail.com</p>
+            </div>
+            <div class="admin-card">
+              <h3>Analytics</h3>
+              <ul>
+                <li>Views, likes, comments, poll results.</li>
+                <li>Trending calculations from engagement.</li>
+                <li>Follower count adjustments.</li>
+              </ul>
+              <button class="btn">View analytics</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <strong>Flowstate UK</strong>
+          <p>Powered by Firebase, Google authentication, and a bold newsroom community.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
